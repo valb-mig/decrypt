@@ -99,7 +99,10 @@ const DecodeBinary = (cipher: string) => {
             for(let i = 0; i < text.length; i += 8) {
 
                 let currentCipher: string = text.substring(i, i + 8);
-                result.push(BinaryAlphabet[currentCipher]);
+
+                let character = BinaryAlphabet[currentCipher];
+
+                result.push(character !== undefined ? character : '█');
             }
 
         }

@@ -8,7 +8,7 @@ import Button from '@/components/Button';
 
 import Helpers from '@/config/helpers';
 
-import '@/app/page.css';
+import 'public/styles/page.css';
 
 export type DataFormProps = {
   cipher: string;
@@ -34,8 +34,8 @@ export default function Home() {
           Value={dataForm.cipher}
           OnChange={(e) => setDataForm({...dataForm, cipher: e.target.value})}
         >
+          <Input.Icon Icon={<Icons.lock/>}/>
           <Input.Title Title="Binary"/>
-          <Input.Icon Icon={<Icons.check/>}/>
         </Input.Root>
 
         <div className='buttons-row'>
@@ -58,10 +58,10 @@ export default function Home() {
           Value={dataForm.decoded}
           OnChange={(e) => setDataForm({...dataForm, decoded: e.target.value})}
           Disbled={true}
-          Placeholder="...The cypher result will be here!"
+          Placeholder="...The decrypt result will be here!"
         >
+          <Input.Icon Icon={<Icons.unLock/>}/>
           <Input.Title Title="Decoded binary"/>
-          <Input.Icon Icon={<Icons.check/>}/>
         </Input.Root>
       </form>
     </main>

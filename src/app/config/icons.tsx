@@ -1,7 +1,13 @@
-import { AiFillCheckCircle } from 'react-icons/ai';
+import { 
+    AiFillCheckCircle, 
+    AiFillUnlock, 
+    AiFillLock
+} from 'react-icons/ai';
 
 const Icons = {
-    check: AiFillCheckCircle
+    check:  AiFillCheckCircle,
+    lock:   AiFillLock,
+    unLock: AiFillUnlock
 }
 
 export default Icons;

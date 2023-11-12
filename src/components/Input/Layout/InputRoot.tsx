@@ -14,7 +14,9 @@ interface InputProps {
 const InputRoot:FC<InputProps> = ({Type, Value, OnChange, Disbled, Placeholder, children}) => {
     return(
         <div className='input'>
+            <div className='input-header'>
             {children}
+            </div>
             { Type == "textarea" ? (
                 <textarea 
                     rows="4" 
