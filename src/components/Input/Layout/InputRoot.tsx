@@ -19,8 +19,8 @@ const InputRoot:FC<InputProps> = ({Type, Value, OnChange, Disbled, Placeholder, 
             </div>
             { Type == "textarea" ? (
                 <textarea 
-                    rows="4" 
-                    cols="50" 
+                    rows={4}
+                    cols={50} 
                     value={Value} 
                     onChange={OnChange}
                     disabled={Disbled}
