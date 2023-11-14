@@ -1,0 +1,31 @@
+.button {
+
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 8px;
+    width: 100%;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    text-shadow: 2px 2px #00000046;
+    background-color: var(--bg-3);
+    border-bottom: 3px solid var(--bg-2);
+    outline: 2px solid var(--bg-1);
+}
+
+.button:active { background-color: var(--bg-2); }
+
+.button[type="submit"]{
+
+    color: black !important;
+
+    background-color: var(--green-1);
+    border-bottom: 3px solid var(--green-2);
+    outline: 2px solid var(--green-3);
+}
+
+.button[type="submit"]:active {
+    background-color: var(--green-2);
+}

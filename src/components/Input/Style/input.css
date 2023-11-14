@@ -1,0 +1,24 @@
+
+textarea {
+
+    padding: 5px;
+    color: white;
+    border: 0;
+    max-width: 600px;
+    min-width: 600px;
+    border-radius: 5px;
+    text-shadow: 2px 2px #00000046;
+    background-color: var(--bg-3);
+    outline: 2px solid var(--bg-1);
+}
+
+.input-header {
+
+    display: flex;
+    color: white;
+    text-shadow: 2px 2px #00000046;
+    gap: 5px;
+}
+
+textarea:focus {  outline: 2px solid var(--green-1); }
+textarea[disabled=""] { background-color: var(--bg-1); }

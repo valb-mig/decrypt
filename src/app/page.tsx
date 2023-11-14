@@ -64,6 +64,9 @@ export default function Home() {
           <Input.Title Title="Decoded binary"/>
         </Input.Root>
       </form>
+      <footer>
+        <p>Made by <a href="https://github.com/valb-mig">Valb.Mig</a></p>
+      </footer>
     </main>
   )
 }

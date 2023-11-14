@@ -1,24 +1,33 @@
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 body {
 
     display: flex;
     justify-content: center;
-    margin-top: 30vh;
-    background-color: var(--main-color);
+    height: 100vh;
+    background-color: var(--bg-1);
+    overflow-x: hidden;
 }
 
 form {
 
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    min-width: none;
     width: 100%;
     padding: 20px;
+    margin-top: 30vh;
     gap: 20px;
-    background-color: var(--secondary-color);
-    border-right: 10px solid var(--darker-1);
-    border-bottom: 10px solid var(--darker-2);
-    outline: 2px solid var(--darker-3);
+    border-radius: 5px;
+    border-bottom: 5px solid var(--bg-1);
+    background-color: var(--bg-2);
+    outline: 2px solid var(--bg-3);
 }
 
 .buttons-row {
@@ -29,57 +38,22 @@ form {
     justify-content: space-between;
 }
 
-.button {
+footer {
 
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
     display: flex;
     justify-content: center;
-    cursor: pointer;
-    border-radius: 0;
-    padding: 5px;
-    width: 100%;
-    background-color: var(--secondary-color);
-    outline: 2px solid var(--darker-3);
-    border: 0;
-
-    color: white;
+    width: 100%; 
+    color: var(--bg-3);
+    background-color: var(--bg-1);
 }
 
-.button:active {
-    background-color: var(--darker-3);
-}
-
-.button[type="submit"]{
-
-    color: black !important;
-    background-color: var(--green-1);
-}
-
-.button[type="submit"]:active {
-    background-color: var(--green-2);
-}
-
-textarea {
-
-    background-color: var(--darker-1);
-    padding: 5px;
-    color: white;
-    border: 0;
-    max-width: 600px;
-    min-width: 600px;
-    outline: 2px solid var(--darker-3);
-}
-
-textarea:focus {
-
-    outline: 2px solid var(--green-1);
-}
-
-textarea[disabled=""]{
-    background-color: var(--darker-3);
-}
-
-.input-header {
-    display: flex;
-    color: white;
-    gap: 5px;
+footer a {
+    text-decoration: none;
+    color: var(--green-1);
 }

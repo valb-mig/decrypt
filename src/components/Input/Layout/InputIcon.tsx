@@ -1,5 +1,7 @@
 import React, { FC, ReactNode } from 'react';
 
+import '@/components/Input/Style/input.css';
+
 interface InputProps {
     Icon: ReactNode;
 }

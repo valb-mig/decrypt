@@ -1,6 +1,6 @@
-'use client';
-
 import React, { FC, ReactNode } from 'react';
+
+import '@/components/Input/Style/input.css';
 
 interface InputProps {
     children: ReactNode;

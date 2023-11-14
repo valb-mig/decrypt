@@ -34,13 +34,14 @@
 
 :root {
   
-  --main-color: #10151a;
-  --secondary-color: #151a20;
+  --bg-1: #050714;
+  --bg-2: #101629;
+  --bg-3: #212C40;
 
-  --darker-1: #1a1f27;
-  --darker-2: #13171d;
-  --darker-3: #1f2631;
+  --fg-1: #46525F;
+  --fg-2: #798A95;
 
   --green-1: #5EF38C;
   --green-2: #459c69;
+  --green-3: #3b755f;
 }

@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
 
+import '@/components/Input/Style/input.css';
+
 interface InputProps {
     Title: string;
 }
